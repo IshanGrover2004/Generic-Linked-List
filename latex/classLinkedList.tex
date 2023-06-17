@@ -1,0 +1,383 @@
+\hypertarget{classLinkedList}{}\doxysection{Linked\+List$<$ T $>$ Class Template Reference}
+\label{classLinkedList}\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+
+
+Sequential data container using linked list.  
+
+
+
+
+{\ttfamily \#include $<$Generic\+\_\+linked\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLinkedList_a82a3828007f4e4d51b5d3a7d874c4c60}\label{classLinkedList_a82a3828007f4e4d51b5d3a7d874c4c60}} 
+\mbox{\hyperlink{classLinkedList_a82a3828007f4e4d51b5d3a7d874c4c60}{Linked\+List}} ()=default
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLinkedList_af9b832a7649af3c40420782ecef9e205}{Linked\+List}} (T data)
+\begin{DoxyCompactList}\small\item\em Constructor for storing data in head \mbox{\hyperlink{structNode}{Node}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinkedList_afeb5873cb2898d405bf05eade35a328d}{push\+\_\+back}} (T element) noexcept
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{LAST}} of linked list.~\newline
+. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinkedList_ae48baa11114faf31ed40d1a410a260e3}{push\+\_\+front}} (T element) noexcept
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{STARTING}} of linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinkedList_a907f1e51fce35db0809c75675c401baf}{insert}} (int position, T element)
+\begin{DoxyCompactList}\small\item\em Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{desired position}} of linked list. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classLinkedList_ad4283b75d12262dc9d9aa332c3bb8020}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em Delete the last node. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classLinkedList_ab6fd7591d9daeaf07e18c9c0045f9d1f}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em Delete the {\bfseries{First}} node. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLinkedList_a60783de29a5420e07d91125b6b649b5c}{remove}} (T element) noexcept
+\begin{DoxyCompactList}\small\item\em Delete the node by searching {\itshape data}. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classLinkedList_a1dbb31c7aac7c80606fdb5ad9095b39e}{get}} (int position)
+\begin{DoxyCompactList}\small\item\em returns {\itshape data} of {\bfseries{Desired \mbox{\hyperlink{structNode}{Node}}}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLinkedList_a69769ef47402ff19953d49188ad706fd}{size}} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns the {\itshape size} of linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLinkedList_adf6193657393591621ae5f4122a9a84d}{is\+\_\+empty}} () noexcept
+\begin{DoxyCompactList}\small\item\em Checks if the Linked list is empty or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinkedList_a50c26292740c964ac7bef0e072868be1}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Delete all the nodes in linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLinkedList_ac0739bee1e788ff2a94ebea23ddcdbc1}{display\+\_\+all}} () noexcept
+\begin{DoxyCompactList}\small\item\em Display all elements of linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classLinkedList_a650282ce83824e43ca94a85c2399916c}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classLinkedList}{Linked\+List}} \&list)
+\begin{DoxyCompactList}\small\item\em Function Overloading of $<$$<$ .~\newline
+ Function Overloading $<$$<$ to print whole linked list when applied cout and pass list to it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Linked\+List$<$ T $>$}
+
+Sequential data container using linked list. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of data stored. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLinkedList_af9b832a7649af3c40420782ecef9e205}\label{classLinkedList_af9b832a7649af3c40420782ecef9e205}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::\mbox{\hyperlink{classLinkedList}{Linked\+List}} (\begin{DoxyParamCaption}\item[{T}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructor for storing data in head \mbox{\hyperlink{structNode}{Node}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \char`\"{}data\char`\"{} is stored in head \mbox{\hyperlink{structNode}{Node}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLinkedList_a50c26292740c964ac7bef0e072868be1}\label{classLinkedList_a50c26292740c964ac7bef0e072868be1}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::clear}
+
+
+
+Delete all the nodes in linked list. 
+
+\begin{DoxyAttention}{Attention}
+Throw an Error message if Linked list is already empty.
+\end{DoxyAttention}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Traverse the Linked list and delete each node. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_ac0739bee1e788ff2a94ebea23ddcdbc1}\label{classLinkedList_ac0739bee1e788ff2a94ebea23ddcdbc1}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!display\_all@{display\_all}}
+\index{display\_all@{display\_all}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{display\_all()}{display\_all()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::display\+\_\+all\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Display all elements of linked list. 
+
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Traverse the Linked list and print {\itshape element}. ~\newline
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_a1dbb31c7aac7c80606fdb5ad9095b39e}\label{classLinkedList_a1dbb31c7aac7c80606fdb5ad9095b39e}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!get@{get}}
+\index{get@{get}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::get (\begin{DoxyParamCaption}\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+returns {\itshape data} of {\bfseries{Desired \mbox{\hyperlink{structNode}{Node}}}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Location of desired \mbox{\hyperlink{structNode}{Node}} to get the data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data of any \mbox{\hyperlink{structNode}{Node}}.
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Throw an Error message if {\itshape position} is incorrect.
+\end{DoxyAttention}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make head copy in current.
+\item Iterate \mbox{\hyperlink{classLinkedList}{Linked\+List}} till reach the desired {\itshape position} of \mbox{\hyperlink{structNode}{Node}}.
+\item Get the {\itshape data} from \mbox{\hyperlink{structNode}{Node}}. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_a907f1e51fce35db0809c75675c401baf}\label{classLinkedList_a907f1e51fce35db0809c75675c401baf}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{int}]{position,  }\item[{T}]{element }\end{DoxyParamCaption})}
+
+
+
+Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{desired position}} of linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Location where we need to add the \mbox{\hyperlink{structNode}{Node}}. \\
+\hline
+{\em element} & is data of any data type which we wanted to add in any POSITION in linked list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Throw an Error message if {\itshape position} is incorrect.
+\end{DoxyAttention}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make copy of head \& make new\+Node and allocate data in it.
+\item Iterate until we reach \char`\"{}desired position\char`\"{}.
+\item link the new\+Node to prev\+Node and link next\+Node to new\+Node . 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{auto} temp = current-\/>next;}
+\DoxyCodeLine{current-\/>next = new\_node;}
+\DoxyCodeLine{new\_node-\/>next = temp;}
+
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_adf6193657393591621ae5f4122a9a84d}\label{classLinkedList_adf6193657393591621ae5f4122a9a84d}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!is\_empty@{is\_empty}}
+\index{is\_empty@{is\_empty}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{is\_empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::is\+\_\+empty\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Checks if the Linked list is empty or not. 
+
+\begin{DoxyReturn}{Returns}
+true When it contains one or more nodes in it. 
+
+false When the Linked list is empty.
+\end{DoxyReturn}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Just check the {\itshape head} is NULL or not. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_ad4283b75d12262dc9d9aa332c3bb8020}\label{classLinkedList_ad4283b75d12262dc9d9aa332c3bb8020}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::pop\+\_\+back}
+
+
+
+Delete the last node. 
+
+\begin{DoxyReturn}{Returns}
+data of deleted node
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Throw an Error message if Linked list is already empty.
+\end{DoxyAttention}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make head node copy in current\+Node and make a prev\+Node.
+\item Iterate \mbox{\hyperlink{classLinkedList}{Linked\+List}} till reach the {\bfseries{last node}} \& also update the prev\+Node,current\+Node in each iteration.
+\item Unlink the prev\+Node \& current\+Node by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{prev-\/>next = \textcolor{keyword}{nullptr} }
+
+\end{DoxyCode}
+
+\item Delete current\+Node. 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_ab6fd7591d9daeaf07e18c9c0045f9d1f}\label{classLinkedList_ab6fd7591d9daeaf07e18c9c0045f9d1f}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::pop\+\_\+front}
+
+
+
+Delete the {\bfseries{First}} node. 
+
+\begin{DoxyReturn}{Returns}
+data of deleted node
+\end{DoxyReturn}
+\begin{DoxyAttention}{Attention}
+Throw an Error message if Linked list is already empty.
+\end{DoxyAttention}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make head node copy in current\+Node.
+\item Delete the head node and declare 2nd node as head. ~\newline
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_afeb5873cb2898d405bf05eade35a328d}\label{classLinkedList_afeb5873cb2898d405bf05eade35a328d}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{LAST}} of linked list.~\newline
+. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & is data of any data type which we wanted to add in the LAST node of linked list.\\
+\hline
+\end{DoxyParams}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make copy of head in current.
+\item Iterate until we reach last element which can be identified by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{.cpp\} current-\/>next = \textcolor{keyword}{nullptr} }
+
+\end{DoxyCode}
+
+\item Link the last node by new node \& allots the element to it. ~\newline
+ ~\newline
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_ae48baa11114faf31ed40d1a410a260e3}\label{classLinkedList_ae48baa11114faf31ed40d1a410a260e3}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Adds a \mbox{\hyperlink{structNode}{Node}} at {\bfseries{STARTING}} of linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & is data of any data type which we wanted to add in the FIRST node of linked list.\\
+\hline
+\end{DoxyParams}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make new\+Node and assign data
+\item Point new\+Node to head
+\item Declare new\+Node as head ~\newline
+ ~\newline
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_a60783de29a5420e07d91125b6b649b5c}\label{classLinkedList_a60783de29a5420e07d91125b6b649b5c}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Delete the node by searching {\itshape data}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & is searched in \mbox{\hyperlink{classLinkedList}{Linked\+List}} and the node contains this element gets deleted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Data from linked list is removed. 
+
+false Data cannot be removed because of \char`\"{}\+Empty linked list\char`\"{}.
+\end{DoxyReturn}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make copy of head in prev\+Node and current as 2nd node.
+\item Iterate the linked list until reach element \& update prev\+Node , current\+Node.
+\item Delete the current\+Node \& link the prev\+Node and next\+Node by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{prev-\/>next = current-\/>next }
+
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}\mbox{\Hypertarget{classLinkedList_a69769ef47402ff19953d49188ad706fd}\label{classLinkedList_a69769ef47402ff19953d49188ad706fd}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!size@{size}}
+\index{size@{size}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$\+::size\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Returns the {\itshape size} of linked list. 
+
+\begin{DoxyReturn}{Returns}
+{\itshape size} It return the size of Linked list or we can say number of node linked together
+\end{DoxyReturn}
+{\bfseries{Logic-\/\+:}}
+\begin{DoxyEnumerate}
+\item Make current as copy of head.
+\item Iterate and each time increase value of count as well as update the node by next\+Node by
+\begin{DoxyCode}{0}
+\DoxyCodeLine{current = current-\/>next }
+
+\end{DoxyCode}
+
+\item When we reach last node then count is the size. ~\newline
+ 
+\end{DoxyEnumerate}
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classLinkedList_a650282ce83824e43ca94a85c2399916c}\label{classLinkedList_a650282ce83824e43ca94a85c2399916c}} 
+\index{LinkedList$<$ T $>$@{LinkedList$<$ T $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!LinkedList$<$ T $>$@{LinkedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classLinkedList}{Linked\+List}}$<$ T $>$ \&}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Function Overloading of $<$$<$ .~\newline
+ Function Overloading $<$$<$ to print whole linked list when applied cout and pass list to it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream object \\
+\hline
+{\em list} & Linked list to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::ostream By returning output stream object, the function enables to make chain of additional output operations. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Generic__linked__list_8h}{Generic\+\_\+linked\+\_\+list.\+h}}\item 
+\mbox{\hyperlink{Generic__linked__list_8cpp}{Generic\+\_\+linked\+\_\+list.\+cpp}}\end{DoxyCompactItemize}
