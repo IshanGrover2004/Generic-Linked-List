@@ -39,9 +39,3 @@ int main() {
   std::cout << std::endl << list <<std::endl;
   
 }
-
-/*things to add more
-    Doxygen host on github
-    multifile split
-    Cmake
-*/
